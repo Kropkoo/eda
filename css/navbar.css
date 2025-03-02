@@ -1,0 +1,21 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    padding: 15px 30px;
+    color: white;
+}
+.navbar {
+    position: fixed; /* Фиксируем сверху */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111; /* Цвет фона */
+    padding: 15px 30px;
+    color: white;
+    z-index: 1000; /* Чтобы навбар был выше всего */
+}
