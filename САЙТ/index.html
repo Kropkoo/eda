@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Доставка еды</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navbar.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <h1>Доставка еды<br>и многое другое</h1>
+            <p>Продовольственные товары, магазины, аптеки, что угодно!</p>
+            <div class="input-box">
+                <input type="text" placeholder="Укажите ваш адрес">
+                <button>Текущее местоположение</button>
+            </div>
+        </div>
+        <div class="image">
+            <img src="img/мику.jpg" alt="Бургер">
+        </div>
+    </div>
+    <div id="header"></div>
+    <main>
+        <h1>Доставка еды и многое другое</h1>
+    </main>
+    <div id="footer"></div>
+     <header class="header">
+        <div class="header-left">
+          <h2 class="logo">Nailo</h2>
+          <div class="location">
+            <span class="location-icon">📍</span>
+            <span class="location-text">Алматы</span>
+            <span class="dropdown">▼</span>
+          </div>
+        </div>
+        <div class="header-center">
+          <div class="search-bar">
+            <span class="search-icon">🔍</span>
+            <input type="text" placeholder="Введите адрес доставки">
+            <span class="gps-icon">🧭</span>
+          </div>
+        </div>
+      
+        <div class="header-right">
+          <nav class="nav-links">
+            <a href="#">Партнеры ▼</a>
+            <a href="#">Вакансии</a>
+            <a id="login-btn" href="#">Войти</a>
+          </nav>
+        <button id="register-btn" class="register-btn" onclick="window.location.href='register.html'">Зарегистрироваться</button>
+        </div>
+      </header>  
+      <script src="js/script.js" defer></script>  
+</body>
+</html>

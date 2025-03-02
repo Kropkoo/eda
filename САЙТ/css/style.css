@@ -1,0 +1,353 @@
+body {
+    background-color: #141414;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Теперь ширина будет динамической */
+    max-width: 100vw; /* Максимальная ширина на весь экран */
+    overflow-x: hidden;
+}
+.container {
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 карточки в ряд */
+    gap: 20px;
+    align-items: stretch;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1a1a1a;
+  }
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff0000, #ff7300);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);
+  }
+  .location {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .location-icon {
+    font-size: 18px;
+    margin-right: 5px;
+  }
+  
+  .location-text {
+    font-size: 16px;
+  }
+  
+  .dropdown {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  
+  /* Центральная часть (поиск) */
+  .header-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #222;
+    border-radius: 50px;
+    padding: 8px 15px;
+    width: 50%;
+    min-width: 300px;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+  }
+  
+  .search-icon {
+    margin-right: 10px;
+  }
+  
+  .gps-icon {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  /* Правая часть (ссылки + кнопка) */
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+  
+  .nav-links a:hover {
+    opacity: 1;
+  }
+  
+  .register-btn {
+    background-color: #0074d9;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: 0.3s;
+  }
+  
+  .register-btn:hover {
+    background-color: #005bb5;
+  }
+.text {
+    max-width: 50%;
+}
+.text h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fffafaa3;
+}
+.text p {
+    font-size: 20px;
+    color: #ffffffa3;
+}
+.input-box {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+input {
+    padding: 10px;
+    width: 250px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background-color: #02a17a;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.image img {
+    max-width: 400px;
+}
+.login {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #00cc99;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.restaurant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px; /* Чтобы элементы не были слишком широкими */
+}
+.restaurants h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffffa3;
+}
+.restaurant-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px; /* Больше расстояние между элементами */
+    width: 80%; /* Ограничиваем ширину */
+    max-width: 1200px; /* Чтобы не растягивалось слишком сильно */
+    margin: 0 auto; /* Центрирование */
+}
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    width: 100%;
+}
+.restaurant img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #FFD700;
+}
+.restaurant span {
+    display: inline-block;
+    margin-top: 10px;
+    background: #FFC107; /* Желтый фон */
+    padding: 5px 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black; /* Черный текст */
+}
+.delivery {
+    color: #1fc70a;
+    background-color: #1fc70a14;
+    padding: 20px;
+}
+h3 {
+    color: #131313a3;
+}
+h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000a3;
+}
+
+.delivery-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.find-button {
+    background-color: #14a37f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.find-button:hover {
+    background-color: #118a6b;
+}
+.footer-section {
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+}
+.search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+.nav-buttons a, .register-btn {
+    margin-left: 15px;
+    text-decoration: none;
+    color: white;
+}
+.register-btn {
+    background: #13ff7d;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+.info-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+.red { background: #8B0000; }
+.blue { background: #0057B7; }
+.yellow { background: #FFA500; }
+.green { background: #008000; }
+.close {
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.google {
+    background: black;
+    color: white;
+}
+
+.apple {
+    background: white;
+    color: black;
+}
+
+.facebook {
+    background: blue;
+    color: white;
+}
+
+.submit {
+    background: #007aff;
+    color: white;
+}
+.logo {
+    width: 100px;
+}
+
+.search {
+    width: 300px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn {
+    padding: 8px 15px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn.primary {
+    background: #007aff;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 80px; /* Чтобы карточки не залезали под шапку */
+}
